@@ -1,0 +1,38 @@
+{
+  "name": "testthat",
+  "displayName": "testthat",
+  "description": "Run testthat tests from the VS Code Testing view",
+  "version": "0.1.0",
+  "publisher": "colinfay",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThinkR-open/vscode-testthat"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Testing"
+  ],
+  "keywords": [
+    "R",
+    "testthat",
+    "test explorer"
+  ],
+  "activationEvents": [
+    "workspaceContains:tests/testthat/*.R"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {},
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}

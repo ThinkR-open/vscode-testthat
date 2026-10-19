@@ -10,6 +10,18 @@ Requirements: R on the `PATH` as `Rscript`, plus `testthat` (>= 3.2.0) and `pkgl
 
 Activates when the workspace contains `tests/testthat/*.R`.
 
+## Installation
+
+Not on the Marketplace yet. Build the VSIX from source and install it:
+
+```
+git clone https://github.com/ThinkR-open/vscode-testthat
+cd vscode-testthat
+npm install
+npx @vscode/vsce package
+code --install-extension testthat-0.1.0.vsix
+```
+
 ## Development
 
 ```
